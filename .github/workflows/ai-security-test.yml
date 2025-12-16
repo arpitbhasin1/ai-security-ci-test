@@ -1,0 +1,19 @@
+name: AI Security Test
+
+on:
+  push:
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout test repo
+        uses: actions/checkout@v4
+
+      - name: Run AI Security CI Tool
+        uses: arpitbhasin1/ai-security-ci@v1
+        with:
+          config_path: "examples/ai-sec-config.yaml"
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
