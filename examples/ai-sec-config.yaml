@@ -1,6 +1,6 @@
 model: "gpt-4o-mini"
 
-systemPromptPath: "./examples/system-prompt.txt"
+systemPromptPath: "./system-prompt.txt"
 attacksPath: "./attack-library/basic-attacks.json"
 
 maxTokens: 256
