@@ -16,4 +16,5 @@ jobs:
         with:
           config_path: "examples/ai-sec-config.yaml"
         env:
+          DEMO_MODE: "true"
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
