@@ -1,13 +1,7 @@
 model: "gpt-4o-mini"
-
 systemPromptPath: "./system-prompt.txt"
 attacksPath: "./attack-library/basic-attacks.json"
 
-maxTokens: 256
-temperature: 0.2
-
-useJudge: true
-fail_on_high: true
-demoMode: true
-maxCalls: 3
-
+maxCalls: 1
+useJudge: false
+fail_on_high: false
